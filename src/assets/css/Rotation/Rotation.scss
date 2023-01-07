@@ -1,11 +1,18 @@
 @import '@css/fonts.scss';
 @import '@css/useful.scss';
 @import '~pretty-checkbox/src/pretty-checkbox.scss';
+
 .rotation--wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    @include basic--wrappers;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .rotation--title {
@@ -30,7 +37,6 @@
 .rotation--checkedUserListBox {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
   justify-content: space-between;
   align-items: center;
   border: 1px solid rgba(128, 128, 128, 0.4784313725);
@@ -97,6 +103,8 @@
   background-color: rgba(128, 128, 128, 0.4784313725);
   border-radius: 10px;
   width: 700px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .rotation--result-text {

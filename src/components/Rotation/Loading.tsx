@@ -8,7 +8,7 @@ function LoadingSpinner() {
       <div style={{}}>
         <FadeLoader color="#505050" height={10} width={5} radius={1} margin={3} />
       </div>
-      <div className="rotation--spinner-info">사서 매칭 중입니다!</div>
+      <div className="rotation--spinner-info">결과를 불러오는 중입니다!</div>
     </div>
   );
 }
